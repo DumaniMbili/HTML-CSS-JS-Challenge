@@ -1,0 +1,106 @@
+.bg-red .inner-circle{
+    background-color: red;
+}
+.bg-green .inner-circle{
+    background-color: green;
+}
+.bg-grey .inner-circle{
+    background-color: grey;
+}
+.bg-blue .inner-circle{
+    background-color: blue;
+}
+.bg-purple .inner-circle{
+    background-color: purple;
+}
+.bg-pink .inner-circle{
+    background-color: pink;
+}
+.bg-rosybrown .inner-circle{
+    background-color: rosybrown;
+}
+.bg-salmon .inner-circle{
+    background-color: salmon;
+}
+.bg-springgreen .inner-circle{
+    background-color: springgreen;
+}
+.bg-tomato .inner-circle{
+    background-color: tomato;
+}
+.bg-royalblue .inner-circle{
+    background-color: violet;
+}
+.bg-violet .inner-circle{
+    background-color: royalblue;
+}
+.bg-yellow .inner-circle{
+    background-color: yellow;
+}
+.bg-teal .inner-circle{
+    background-color: teal;
+}
+.bg-peachpuff .inner-circle{
+    background-color: peachpuff;
+}
+.bg-navajowhite .inner-circle{
+    background-color: navajowhite;
+}
+.bg-limegreen .inner-circle{
+    background-color: limegreen;
+}
+.bg-lawngreen .inner-circle{
+    background-color: lawngreen;
+}
+.bg-lavender .inner-circle{
+    background-color: lavender;
+}
+.bg-orange .inner-circle{
+    background-color: orange;
+}
+
+.color-circle {
+    margin: 0.5rem 1rem;
+}
+
+.color-circle .inner-circle{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.color-circle.selected{
+    padding: 2px;
+    border-radius: 50%;
+    border : 1px solid grey;
+}
+
+.quantity-box{
+    border-radius: 45%;
+    /* width: 50px; */
+    height: 50px;
+    border-width: 2px !important;
+}
+
+.cart-btn{
+    border-radius: 35%;
+    background-color: black;
+}
+
+.sign{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    justify-content: center;
+}
+
+input[type=text]
+{
+   
+    border: none; 
+    font-weight: bold;
+    font-size: 24px; 
+}

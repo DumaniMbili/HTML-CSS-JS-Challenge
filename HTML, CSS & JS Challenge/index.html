@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css file for bootstrap -->
+    <link rel="stylesheet" href="./folders/css/bootstrap.min.css"> 
+    
+    <link rel="stylesheet" href="./folders/css/style.css">
+
+    <title>HTML CSS Javascript Challenge</title>
+</head>
+<!-- bg-primary will set the background colour -->
+<body class="bg-primary">
+    <!-- the width is set with w-50
+        container will give padding between the edges and content. pt-3 will set the padding at the top
+        mx-auto will center the content. -->
+    <div class="w-50 pt-3 container bg-white mx-auto">
+        <div class="title">
+            <H2 class="font-weight-bold" >HICKIES Originals</H2>
+        </div>
+        
+        <div class="row">
+            <!-- col-lg-2 this  is a column on  screens that are large and it will take up the width of 2 columns -->
+            <div class="col-lg-2">
+                stars
+            </div>
+            <!-- col-lg-3 this is a column on screens that are large and it will take up the width of 3 columns -->
+            <div class="col-lg-3">
+                <!-- text color turns grey when using text-secondary -->
+                <p class="text-secondary">1 293 reviews</p>
+            </div>
+        </div>
+        <div class="row text-secondary">
+            <div class="price col-lg-2"><h3 class="text-danger font-weight-bold">$14.99</h3></div>
+            <div class="price-original col-lg-2 mt-2">$17.99</div>
+            <div class="price-discount col-lg-2 mt-2">25%</div>
+        </div>
+        <div>
+            <p class="pl-3">ONLINE EXCLUSIVE</p>
+        </div>
+        <div class="color-picker">
+            <div class="picked-color">
+                <p class="font-weight-bold">COLOR: <span id="selected-color" class="font-weight-normal">Electric Red</span></p>
+            </div>
+            
+            <div class="colors d-flex flex-wrap ">
+                <div id="red" class="color-circle bg-red selected"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
+                <div id="green" class="color-circle bg-green"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
+                <div id="grey" class="color-circle bg-grey"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
+                <div id="blue" class="color-circle bg-blue"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
+                <div id="purple" class="color-circle bg-purple"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
+                <div id="pink" class="color-circle bg-pink"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
+                <div id="rosybrown" class="color-circle bg-rosybrown"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
+                <div id="royalblue" class="color-circle bg-royalblue"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
+                <div id="salmon" class="color-circle bg-salmon"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
+                <div id="springgreen" class="color-circle bg-springgreen"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
+                <div id="tomato" class="color-circle bg-tomato"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
+                <div id="violet" class="color-circle bg-violet"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
+                <div id="yellow" class="color-circle bg-yellow"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
+                <div id="lavender" class="color-circle bg-lavender"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
+                <div id="lawngreen" class="color-circle bg-lawngreen"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
+                <div id="navajowhite" class="color-circle bg-navajowhite"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
+                <div id="peachpuff" class="color-circle bg-peachpuff"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
+                <div id="teal" class="color-circle bg-teal"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
+                <div id="orange" class="color-circle bg-orange"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
+            </div>
+        </div>
+        <p>Size Guide</p>
+        <p>Your Custom Fit</p>
+        <div class="row">
+            <!-- border will create a border 
+                border-dark will set the color -->
+            <div class="col-lg-2 quantity-box pt-2 border border-dark text-center ml-3 my-2">
+                <h5 id="quantity m-0" >0</h5>
+            </div>
+            
+             <!-- 
+                 data-toggle modal ensures that this element would control a modal
+                 data-target # would target the id, so this would have to match the id of the div which will hold your content of the modal -->
+            <div id="cart-btn" class="col-lg-4 btn btn-dark ml-2 text-center cart-btn pt-3 mb-2"  data-toggle="modal" data-target="#exampleModalCentered">
+                <p>Add to Cart</p>
+            </div>
+        </div>
+        <!-- 
+            border-top would create a border only on top
+            border-bottom would create a border only at the bottom
+         -->
+        <div class="py-4 px-2 my-3 border-top border-bottom border-dark ">
+            <!-- margin at the bottom is removed with mb-0 -->
+            <P class="mb-0">DETAILS</P>
+        </div>
+        <div>
+            <p>Need Help</p>
+            <p>Shopping & Returns</p>
+        </div>
+
+    </div>
+
+  
+    <!-- Modal -->
+    <!--
+         modal shows that all content that is inside would belong to a modal and should be hidden
+      -->
+    <div class="modal" id="exampleModalCentered" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+        
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               
+                <div class="modal-body">
+                    <!-- 
+                        w-100 sets width to 100% of its container
+                        h-100 sets height to 100% of its container
+                     -->
+                    <div class="w-100 h-100 border border-dark">
+                        <p class="text-center">Please add the quantity of the item you have selected</p>
+                        <div class="my-5">
+                            <div class="row">
+                                <div class="col-lg-4 mt-4 text-center">
+                                    Electric Red
+                                </div>
+                            
+                                <div class="col-lg-3">
+                                    
+                                    <button class="btn btn-minus btn-dark sign disabled" type = "button"><h1>-</h1></button>
+                                     <input type = "text" id = "col-lg-2 pt-2" value = "0">
+                                    
+                                </div>
+                                
+                                <div class="col-lg-3">
+                                    <button class="btn btn-plus btn-dark sign" type = "button"><h1>+</h1></button>
+                                        
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <!-- justify-content-end content is pushed to the end -->
+                        <div class="d-flex justify-content-end my-3 mx-3">
+                            <!-- btn-succes(danger) will set the btn color  -->
+                            <!-- data-dismiss shows that the btn should close the modal when clicked -->
+                            <button type="button" class="btn btn-success  mx-2" data-dismiss="modal">Agree</button>
+                            <button type="button" class="btn btn-danger">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- jquery is a javascript library used by bootstrap, it's only required for the modal functionality and anything else that you might want to add that requires some interactivity -->
+    <script src="./folders/js/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap javascript file works with jquery to add the functionality -->
+    <script src="./folders/js/bootstrap.min.js"></script>
+    <!-- main.js our custom javascript is written -->
+    <script src="./folders/js/script.js"></script>
+</body>
+</html>
